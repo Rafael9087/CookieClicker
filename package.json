@@ -1,0 +1,11 @@
+{
+    "name": "cookie-clicker",
+    "version": "1.0.0",
+    "description": "Meu joguinho em HTML/CSS/JavaScript",
+    "main": "index.html",
+    "scripts": {
+      "start": "electron ."
+    },
+    "author": "uNoob"
+  }
+  

@@ -1,0 +1,142 @@
+.botaoCozinheira1, .botaoCozinheira2, .botaoForno1, .botaoForno2, .iniciarJogo, .menuJogo {
+    width: 125px;
+    height: 50px;
+    background-color: #12466d;
+    color: #ededed;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.botaoCozinheira1 {
+    top: 880px;
+    left: 40px;
+}
+
+.botaoCozinheira2 {
+    top: 815px;
+    left: 40px;
+}
+
+.botaoForno1 {
+    top: 750px;
+    left: 40px;
+}
+
+.botaoForno2 {
+    top: 685px;
+    left: 40px;
+}
+
+.iniciarJogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menuJogo {
+    position: absolute;
+    top: 2%;
+    left: 92%;
+}
+
+.botaoCozinheira1:hover, .botaoCozinheira2:hover, .botaoForno1:hover, .botaoForno2:hover, .iniciarJogo:hover, .menuJogo:hover {
+    background-color: #0b2e49;
+    box-shadow: 
+    0px 0px 5px 0px,
+    0px 0px 25px 0px
+    #00aaff;
+}
+
+.tabelaOculta {
+    display: table;
+}
+
+.tabelaCookiesClick {
+    position: absolute;
+    top: 105px;
+    left: 40px;
+}
+
+.tabelaCookiesS {
+    position: absolute;
+    top: 170px;
+    left: 40px;
+}
+
+table {
+    background-color: #0e3e63;
+    color: #ededed;
+    margin: 5px 0;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+body {
+    background-color: #297bae;
+}
+
+#cookieImagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#olhinho {
+    position: absolute;
+    top: 61px;
+    left: 255px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10%;
+    height: 10px;
+    background: #0e3e63;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #19649d;
+    border-radius: 50%;
+    cursor: pointer; 
+}
+
+video::-webkit-media-controls-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.volume-label {
+    font-size: 14px;
+    color: #0073e6;
+}
+
+.tela {
+    display: none;
+}
+
+.visivel {
+    display: block;
+}
+
+h1 {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ededed;
+    font-size: 50px;
+}
