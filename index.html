@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+
+    <link rel="icon" href="iconeCookie.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <div id="telaInicial" class="tela visivel">
+    <h1>Cookie Clicker</h1>
+        <button class="iniciarJogo" id="iniciarJogo" onclick="iniciarJogo()">Iniciar Jogo</button>
+    </div>
+
+    <div id="telaJogo" class="tela">
+
+    <img id="cookieImagem" src="cookie.png" width="200" height="200" style="cursor: pointer;" alt="Um cookie">
+    <img id="olhinho" src="olhinho.png" width="20" height="20" style="cursor: pointer;" alt="Simbolo de um olho de esconder a senha">
+
+    <audio id="clickCompra">
+        <source src="clickCompra.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="musicaDeFundo" loop>
+        <source src="musicaDeFundo.mp3" type="audio/mpeg">
+    </audio>
+
+    <input type="range" id="controleVolume" min="0" max="1" step="0.01" value="0.05">
+<span id="volumeExibido">5%</span>
+
+    <div class="container">
+
+        <button class="botaoCozinheira1" id="cozinheira1" onclick="comprar1()">Cozinheira +1 ($100)</button>
+        <button class="botaoCozinheira2" id="cozinheira2" onclick="comprar2()">Cozinheira +3 ($300)</button>
+
+        <button class="botaoForno1" id="forno1" onclick="comprarForno1()">Forno +1/s ($500)</button>
+        <button class="botaoForno2" id="forno2" onclick="comprarForno2()">Forno +3/s ($750)</button>
+
+    <table border="1">
+        <tr>
+            <th width="200" height="20">Cookies</th>
+        </tr>
+        <tr>
+            <td id="cookies" width="200" height="20">0</td>
+        </tr>
+    </table>
+
+    <div>
+        <table border="1" class="tabelaOculta tabelaCookiesClick" id="tabelaCookiesP">
+            <tr>
+                <th width="120" height="20">Cookies p/click</th>
+            </tr>
+            <tr>
+                 <td id="cookiesp/click" width="120" height="20">1</td>
+            </tr>  
+        </table>
+    </div>
+
+    <div>
+        <table border="1" class="tabelaOculta tabelaCookiesS" id="tabelaCookiesS">
+            <tr>
+                <th width="120" height="20">Cookies/s</th>
+            </tr>
+            <tr>
+                <td id="cookies/s" width="120" height="20">0</td>
+            </tr>
+        </table>
+    </div>
+</div>
+        <button class="menuJogo" id="menuJogo" onclick="menuJogo()">Menu</button>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
